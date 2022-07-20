@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto+Mono:wght@500&family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto+Mono&display=swap');
 
 
 html {
@@ -12,10 +12,12 @@ h3{
   }
   
 a {
+    color: rgb(156, 156, 156);
     font-family: 'Roboto Mono', monospace;
   }
 a:hover{
-    color: aqua;
+    font-size: 15px;
+    color: #64ffda
   }
   
 .alto{
@@ -27,34 +29,97 @@ a:hover{
     height: 6rem;
 }
  
-.containerFijo{
-    margin-top: 125px;
+.navbar {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
 }
+
 
 .navbar-nav > li{
     padding-left:10px;
     padding-right:10px;
   }
 
+#navbarSupportedContent a {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Mono', monospace;
+}
+#navbarSupportedContent a:hover {
+    font-size: 18px;
+    color: #64ffda
+}
+
+#containerIzq{
+    
+    font-size: 25px;
+    margin-top: 610px;
+    position:fixed;
+}
+
+#containerMedio{
+    margin-top: 125px;
+    position: relative;
+}
+#containerDer{
+    font-size: 12px;
+    margin-top: 110px;
+    position: fixed
+}
+
+#footer{
+    background-color:#233554;
+}
+
+h7{
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+}
+
+
+.letraAzul {
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+    color: #64ffda
+}
+
+.letraBold {
+    font-size: 80px;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+
+.colorGeneralRow{
+    background-color:#0a192f ;
+}
+.colorContainer{
+    background-color:#233554 ;
+}
+
+
 .loginButton{
+    color: rgb(255, 255, 255);
+    border-color: #aaaaaa;
+    border-width: 1px;
+    border-style: solid;
     padding-left:10px;
     padding-right:10px;
 }
 
-
-
-.wrapper{
-	position: relative;
+.loginButton:hover{
+    font-size: 18px;
+    color: #64ffda;
+    border-color: #64ffda;
+    background-color:#64ffdb2c ;
+    border-width: 3px;
+    border-style: solid;
+    padding-left:10px;
+    padding-right:10px;
 }
 
-.sidebar{
-	position: fixed;
-	width: 84px;
-	height: 100%;
-	background: rgb(212, 212, 212);
-	padding: 10px 0;
-	    
+.vertical {
+    border-left: 2px solid rgb(156, 156, 156);;
+    height: 200px;
+    left: 50%;
+    position:relative
 }
-
-
 
