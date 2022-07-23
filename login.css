@@ -72,23 +72,32 @@ h5{
 
 .loginButton{
   font-family: 'Roboto Mono', monospace;
-  color: rgb(255, 255, 255);
-  border-color: #aaaaaa;
-  border-width: 1px;
-  border-style: solid;
-  padding-left:10px;
-  padding-right:10px;
+  color: white;
+  border: 1px solid #64ffda;
+  background:none;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
 }
-
 
 .loginButton:hover{
-  font-size: 23px;
-  color: #64ffda;
-  border-color: #64ffda;
-  background-color:#64ffdb25 ;
-  border-width: 3px;
-  border-style: solid;
-  padding-left:10px;
-  padding-right:10px;
+  color: rgb(0, 0, 0);
 }
 
+.loginButton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height:0%;
+  background: #64ffda;
+  z-index: -1;
+  transition: 0.8s;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.loginButton:hover::before{
+  height: 180%;
+}
