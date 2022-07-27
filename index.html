@@ -26,7 +26,7 @@
               <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-xl-0 text-center">
                   <li class="nav-item">
-                    <a class="nav-link" href="#acercaDe"><span class="letraAzul">01.</span> Aboutme</a>
+                    <a class="nav-link" href="#acercaDe"><span class="letraAzul">01.</span> About</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#experiencia"><span class="letraAzul">02.</span> Experience</a>
@@ -41,7 +41,7 @@
                     <a class="nav-link" href="#proyectos"><span class="letraAzul">05.</span> Proyects</a>
                   </li>
                 </ul>
-                <div class="text-center">
+                <div class="text-center" id="botonLogin">
                   <a href="login.html">
                     <button class="btn me-4 loginButton type="submit">Login</button>
                   </a>
@@ -82,21 +82,39 @@
    
               <!-- FIN (columna izquierda) -->
 
-
+            
 
               <!-- INICIO Estructura cambiable de la pagina (Columna central) -->
 
-              <div class="col-sm-12 col-lg-12 col-xl-10" id="containerMedio">
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-10 ">
                           <section class="centerSection bgSection1"id="acercaDe">
-                            <div class="container-fluid">
-                              <div class="container">
-                                  <h5 class="letraAzul">Hola, mi Nombre es</h5>
-                                  <span class="letraBold">Theo Pelegrina.</span>
-                                  <h3 class="display-3 text-muted pt-0">Construyo cosas para la web.</h3>
-                                  <p class="lead text text-white">Soy un <span class="letraAzul">estudiante</span> de Ingenieria en Sistemas en progreso que se especializa en crear (y ocasionalmente diseñar) experiencias digitales excepcionales.<br>Mi objetivo con esta web es enseñarte un breve resumen acerca mío.</p>
-                                  <div class="row colorContainer text-white">
-                                      <div class="col-sw-12 col-md-6 text-center py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis corrupti, natus fugiat aliquam ducimus modi accusantium vero tenetur quas tempore placeat recusandae, distinctio voluptatibus laudantium adipisci quo. Ipsa aut quia earum perspiciatis corrupti! Ad veritatis, ipsam vitae mollitia odit sapiente.</div>
-                                      <div class="col-sw-12 col-md-6 text-center py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur itaque culpa, deserunt aspernatur provident architecto, quasi ratione nemo porro dignissimos optio quae ipsum repellat adipisci earum quam aliquid necessitatibus. Cum vero nihil nulla nobis consequuntur aut pariatur iure quam cupiditate.</div>
+                            <div class="container-fluid ">
+                              <div class="container ">
+                                  <div>
+                                    <h5 class="letraAzul">Hola, mi Nombre es</h5>
+                                  </div>
+                                  <div>
+                                    <span class="letraBold text-white"id="titulo"><b>Theo Pelegrina.</b></span>
+                                  </div>
+                                  <div>
+                                    <h3 class="letraGris"id="subtitulo"><b>Construyo cosas para la web.</b></h3>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                      <p class="text letraGris">Soy <span class="letraAzul">estudiante</span> de Ingenieria en Sistemas en progreso que se especializa en crear (y ocasionalmente diseñar) experiencias digitales excepcionales.<br>Mi objetivo con esta web es enseñarte un breve resumen acerca mío. <br></p>
+                                      <p> 
+                                        Mi interés en el desarrollo web comenzó en en 2017 cuando decidí intentar crear mi primer página. ¡Esta experiencia me resulto muy dificil pero me hizo aprender bastante HTML y CSS!
+                                        
+                                        . Luego tuve conocimientos muy variados hasta que decidi comenzar a estudiar ingenieria en sistemas. Donde hoy he buscado ampliar mis conocimientos mas allá de mi carrera. ¡Es por eso que hoy en me estoy convirtiendo en un desarrollador <span class="letraAzul">Full Stack Junior</span>!
+                                      </p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="box">
+                                          <div class="imgBx"> 
+                                            <img src="images/me.png" alt="me"> 
+                                          </div>
+                                        </div>
+                                    </div>
                                   </div>
                               </div>
                             </div>
@@ -109,8 +127,8 @@
                               <div class="container">
                                   <h3 class="display-3 text-white"><b>Experiencia.</b></h3>
                                   <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at. Et dolor aspernatur neque nesciunt ratione aperiam quae consequatur natus!</p>
-                                  <div class="colorContainer text-white pt-3">
-                                      <div class="row text-center alto align-items-center">
+                                  <div class="containerOscuro text-white pt-3">
+                                      <div class="row text-center align-items-center">
                                           <div class="col-sm-12 col-md-6"><h6 class="text-center"><b>Trabajo 1</b></h6></div>
                                           <div class="col-sm-12 col-md-6"><h6 class="text-center"><b>Trabajo 2</b></h6></div>
                                       </div>
@@ -128,7 +146,7 @@
                                   <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at. Et dolor aspernatur neque nesciunt ratione aperiam quae consequatur natus!</p>
                               </div>
                               <div class="container">
-                                  <div class="row colorContainer text-white">
+                                  <div class="row containerOscuro text-white">
                                       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 py-3"><h6><b>Lorem.</b></h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illo sit molestiae quod sapiente fugit labore velit officiis vitae incidunt.</div>
                                       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 py-3"><h6><b>Lorem.</b></h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illo sit molestiae quod sapiente fugit labore velit officiis vitae incidunt.</div>
                                       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 py-3"><h6><b>Lorem.</b></h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illo sit molestiae quod sapiente fugit labore velit officiis vitae incidunt.</div>
@@ -146,7 +164,7 @@
                                   <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at. Et dolor aspernatur neque nesciunt ratione aperiam quae consequatur natus!</p>
                               </div>
                               <div class="container">
-                                  <div class="row colorContainer text-white">
+                                  <div class="row containerOscuro text-white">
                                       <div class="col-sm-12 col-md-6 col-lg-6 py-3"><h6><b>Blandas</b></h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illo sit molestiae quod sapiente fugit labore velit officiis vitae incidunt.</div>
                                       <div class="col-sm-12 col-md-6 col-lg-6 py-3"><h6><b>Duras</b></h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illo sit molestiae quod sapiente fugit labore velit officiis vitae incidunt.</div>
                                   </div>
@@ -161,7 +179,7 @@
                               <div class="container">
                                   <h3 class="display-3 text-white"><b>Proyectos.</b></h3>
                                   <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at. Et dolor aspernatur neque nesciunt ratione aperiam quae consequatur natus!</p>
-                                  <div class="row colorContainer">
+                                  <div class="row containerOscuro">
                                       <div class="col-sm-12 col-md-6  py-2 text-white"><h6 class="text-center"><b>proyect1.jpg</b></h6></div>
                                       <div class="col-sm-12 col-md-6 py-2 text-white"><h6 class="text-center"><b>proyect2.jpg</b></h6></div>
                                   </div>
@@ -178,7 +196,7 @@
 
               <!-- Inicio (columna derecha) -->
 
-              <div class="d-none d-xl-block col-xl-1 py-2  pb-4 " >
+              <div class="d-none d-xl-block col-xl-1 py-2  pb-4" >
                   
                 <div class="vertical" id="containerDer">
                     <a href="">
@@ -205,24 +223,24 @@
         <div class="d-xl-none py-2 text-center" id="footer" >
               <div class="row pb-4  mt-4">
                 <div class="col-4">
-                  <a href=""> <i class="bi bi-instagram"></i></a>
+                  <a href="https://www.instagram.com/theopelegrina/"> <i class="bi bi-instagram hoverSuave"></i></a>
                 </div>
                 <div class="col-4">
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/theo-pelegrina-60081a208/"><i class="bi bi-linkedin hoverSuave"></i></a>
                 </div>
                 <div class="col-4">
-                <a href=""><i class="bi bi-github"></i></a>
+                <a href="https://github.com/theit0"><i class="bi bi-github hoverSuave"></i></a>
                 </div>                    
               </div>
         </div>
 
         <div class="d-xl-none py-2 text-center pb-4" id="footer">
-          <a href="" id="emailFooter">
+          <a class="letraAzul" id="emailFooter">
             <h5> Contacto: theopelegrina469@gmail.com </h5>
           </a>
-          <p class="lead text-muted">Creado y diseñado por Theo Pelegrina.</p>
+          <p class="lead letraGris">Creado y diseñado por Theo Pelegrina.</p>
         </div>
-
+ 
     </footer>
 
     <!--  FIN Pie de pagina -->

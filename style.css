@@ -1,30 +1,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body {
+    background-color:#0a192f ;
+    padding-top: 60px;
+}
 
 html {
     font-size: 1rem;
     scroll-behavior: smooth;
-
 }
 
-h3{
-    font-family: 'PT Sans', sans-serif;
-  }
-  
 a {
     color: rgb(156, 156, 156);
     font-family: 'Roboto Mono', monospace;
-  }
+}
 header.a:hover{
     color: #64ffda
-  }
+}
 
-
-  
-.alto{
-    height: 150px;
+p{
+    color:#8892b0;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .logo{
@@ -38,11 +39,10 @@ header.a:hover{
 
 }
 
-
 .navbar-nav > li{
     padding-left:10px;
     padding-right:10px;
-  }
+}
 
 #navbarSupportedContent a {
     color: rgb(255, 255, 255);
@@ -74,7 +74,11 @@ header.a:hover{
     height: 180%;
 }
 
-
+#navbarSupportedContent span{
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+    color: #64ffda
+}
 
 .hoverSuave{
     color: rgb(255, 255, 255);
@@ -104,6 +108,11 @@ header.a:hover{
     width: 105%;
 }
 
+#subtitulo {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
 #containerIzq{
     font-size: 20px;
     width: 40px;
@@ -114,12 +123,6 @@ header.a:hover{
     z-index: 10;
     color: white;
 }
-
-
-#containerMedio{
-    position: relative;
-}
-
 
 #containerDer{
     font-size:12px;
@@ -145,26 +148,20 @@ h7{
     text-orientation: sideways-right;
 }
 
-
-.letraAzul {
-    font-size: 20px;
+.letraAzul  {
+    font-size: 16px;
     font-family: 'Roboto Mono', monospace;
     color: #64ffda
 }
 
 .letraBold {
     font-size: 75px;
-    font-family: 'PT Sans', sans-serif;
-    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.colorGeneralRow{
-    background-color:#0a192f ;
+.letraGris {
+    color:#8892b0;
 }
-.colorContainer{
-    background-color:#233554 ;
-}
-
 
 .loginButton{
     color: white;
@@ -197,6 +194,11 @@ h7{
     height: 180%;
 }
 
+.containerOscuro{
+    background-color: #112240;
+    filter: drop-shadow(0 0 0  #000000); 
+}
+
 .vertical{
     display: flex;
     flex-direction: column;
@@ -226,6 +228,54 @@ h7{
     padding: 0px;
 }
 
-.bgSection1{
-    background-image: url("images/firstSectionBg.jpg");
+.bgSection1 {
+    background: url(images/firstSectionBg2.png) ; 
 }
+
+.box {
+     position: relative;
+     display: inline-block;
+  }
+
+img[alt="me"] {
+    border-radius: 4px;
+    max-width: 300px;
+    max-height: 300px;
+    transition: 0.5s;
+    filter: opacity(0.5) drop-shadow(0 0 0  #64ffda); 
+}
+
+img[alt="me"]:hover {
+    filter: opacity(1)
+}
+
+
+@media screen and (max-width:1199px){
+    #botonLogin {
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width:991px){
+    body {
+        padding-top: 150px;
+    }
+    #titulo{
+        line-height: 1.1;
+        font-size: 60px;
+    }
+    
+    #subtitulo {
+        font-size: 40px;
+    }  
+}
+
+@media screen and (max-width:767px){
+    .box {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
